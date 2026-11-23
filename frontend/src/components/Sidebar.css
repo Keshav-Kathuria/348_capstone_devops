@@ -1,0 +1,121 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #111827, #1f2937);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 0 25px rgba(0,0,0,.25);
+    transition: all .35s ease;
+    z-index: 999;
+  }
+  
+  .sidebar-logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  
+  .sidebar-menu {
+    flex: 1;
+    padding: 18px 0;
+  }
+  
+  .sidebar-menu a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 24px;
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+    border-left: 4px solid transparent;
+  }
+  
+  .sidebar-menu a svg {
+    font-size: 18px;
+    transition: .3s;
+  }
+  
+  .sidebar-menu a:hover {
+    background: rgba(59,130,246,.18);
+    color: white;
+    padding-left: 30px;
+    border-left: 4px solid #3b82f6;
+  }
+  
+  .sidebar-menu a:hover svg {
+    transform: scale(1.15);
+  }
+  
+  .sidebar-menu a.active {
+    background: linear-gradient(
+        90deg,
+        rgba(59,130,246,.25),
+        rgba(59,130,246,.08)
+    );
+    border-left: 4px solid #3b82f6;
+    color: #fff;
+  }
+  
+  .sidebar-menu a.active svg {
+    color: #60a5fa;
+  }
+  
+  .sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    text-align: center;
+    color: #9ca3af;
+    font-size: 13px;
+  }
+  
+  .sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 10px;
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Mobile */
+  
+  @media (max-width: 992px) {
+  
+  .sidebar{
+  width:80px;
+  }
+  
+  .sidebar-logo{
+  font-size:20px;
+  }
+  
+  .sidebar-menu a{
+  justify-content:center;
+  padding:18px;
+  }
+  
+  .sidebar-menu a span{
+  display:none;
+  }
+  
+  .sidebar-menu a svg{
+  font-size:22px;
+  }
+  
+  }

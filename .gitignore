@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Flask
+backend/instance/
+backend/*.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment
+.env
+backend/.env
+frontend/.env
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
